@@ -8,11 +8,11 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "~ETR Thoughts~",
+    pageTitle: "ETR Thoughts",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "null",
+      provider: "plausible",
     },
     locale: "en-US",
     baseUrl: "etrthoughts.github.io",

@@ -7,8 +7,6 @@ on:
 env:
   THEME_NAME: catppuccin
  
-      - name: Fetch Quartz Theme
- 	run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- $THEME_NAME
 permissions:
   contents: read
   pages: write
@@ -21,6 +19,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-22.04
+      - name: Fetch Quartz Theme
+ 	run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- $THEME_NAME
     steps:
       - uses: actions/checkout@v4
         with:

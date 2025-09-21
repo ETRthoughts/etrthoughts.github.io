@@ -1,5 +1,5 @@
 {
-  "name": "npm",
+  "name": "@jackyzha0/quartz",
   "description": "🌱 publish your digital garden and notes as a website",
   "private": true,
   "version": "4.5.1",
@@ -9,7 +9,7 @@
   "homepage": "https://quartz.jzhao.xyz",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jackyzha0/quartz.git"
+    "url": "https://github.com/jackyzha0/quartz.git"
   },
   "scripts": {
     "quartz": "./quartz/bootstrap-cli.mjs",
@@ -32,7 +32,7 @@
     "quartz"
   ],
   "bin": {
-    "quartz": "quartz/bootstrap-cli.mjs"
+    "quartz": "./quartz/bootstrap-cli.mjs"
   },
   "dependencies": {
     "@clack/prompts": "^0.11.0",
@@ -110,13 +110,5 @@
     "prettier": "^3.6.2",
     "tsx": "^4.20.5",
     "typescript": "^5.9.2"
-  },
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
-  "types": "./index.d.ts",
-  "bugs": {
-    "url": "https://github.com/jackyzha0/quartz/issues"
   }
 }

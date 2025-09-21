@@ -20,10 +20,16 @@ const config: QuartzConfig = {
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
-      cdnCaching: true,
+      cdnCaching: false,
       typography: {
-        header: "Bruno Ace",
-        body: "Michroma",
+        header: {
+	   name: "Bruno Ace",
+	   weights: [400],
+	},
+        body: {
+	   name: "Michroma",
+	   weights: [400],
+	},
         code: "IBM Plex Mono",
       },
       colors: {
